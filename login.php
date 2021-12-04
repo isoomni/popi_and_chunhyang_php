@@ -2,7 +2,7 @@
 header("Content-Type:text/html; charset=UTF-8");
 session_start();
 
-$conn = new mysqli("13.124.144.102","root","Ga1234!!","pac");
+$conn=mysqli_connect('13.124.144.102','soom','Soom1234!!','pac', 3306);
 
 mysqli_query($conn,'SET NAMES utf8');
 
