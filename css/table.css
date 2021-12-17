@@ -190,19 +190,19 @@ img {
 }
 
 /*=== HOME ===*/
-.join {
+.base {
     background-color: var(--gray-color);
 }
 
-.join__container {
+.base__container {
     height: calc(100vh - var(--header-height));
 }
 
-.join__data {
+.base__data {
     padding-top: 6rem;
 }
 
-.join__title {
+.base__title {
     align-self: center;
     font-size: 2.5rem;
     line-height: 1.2;
@@ -211,30 +211,35 @@ img {
     color: var(--first-color);
 }
 
-.join__title span {
+.base__title span {
     font-size: var(--h1-font-size);
 }
 
+.h2{
+    text-align: center;
+}
+.baseList{
+    margin-top: 1.5rem;
+    width: 75%;
+    border-collapse: collapse;
+    border:1px solid #e55947;
+}
+
+
+.tr, th, td{
+    border: 1px solid #e55947;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fffaf9;
+}
 
 /*BUTTONS*/
-.join__data label{
+.base__data label{
     color: var(--first-color);
     font-weight: var(--font-semi);
 }
 
-.join__data input{
-    display: inline-block;
-    width: auto;
-    padding: 1rem;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #999;
-    font-size: var(--medium-font-size);
-    color: var(--first-color);
-    outline: none;
-}
-
-.join__data button{
+.base__data button{
     margin-top: 10px;
     display: inline-block;
     background-color: var(--first-color);
@@ -245,7 +250,7 @@ img {
     transition: 0.3s;
     border: none;
 }
-.join__data button:hover {
+.base__data button:hover {
     background-color: var(--first-color-alt);
 }
 
@@ -276,19 +281,19 @@ body {
 .nav__toggle {
     display: none;
 }
-.join__container {
+.base__container {
     height: 100vh;
 }
-.join__data {
+.base__data {
     padding: 0;
     height: max-content;
     align-self: center;
 }
-.join__title {
+.base__title {
     line-height: 1.2;
     letter-spacing: 1.2rem;
 }
-.join__img {
+.base__img {
     width: 530px;
 }
 .collection__container {
@@ -306,11 +311,11 @@ body {
         margin-right: auto;
     }
 
-    .join__data {
+    .base__data {
         padding-left: 7rem;
     }
 
-    .join__img {
+    .base__img {
         right: 15%;
     }
     .new__container {

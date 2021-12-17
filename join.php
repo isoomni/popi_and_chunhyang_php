@@ -6,7 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="./join.css"/>
+        <link rel="stylesheet" href="./css/base.css"/>
 
         <!-- ===== BOXICONS ===== -->
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -21,7 +21,7 @@
         <header class="header1">
             <nav class="nav bd-grid">
                     <div>
-                        <a href="/home.html" class=nav__logo>포피와 춘향</a>
+                        <a href="/home.php" class=nav__logo>포피와 춘향</a>
                         </div>
         
                         <div class="nav__menu" id="nav-menu">
@@ -41,10 +41,11 @@
                         </div>
                 </nav>
         </header>
-        <section class="join" id="join">
-            <div class="join__container bd-grid">
-                <div class="join__data">
-                    <h1 class="join__title">회원가입</h1>
+        <section class="base" id="base">
+            <div class="base__container bd-grid">
+                <div class="base__data">
+                    <!-- 회원가입 폼 -->
+                    <h1 class="base__title">회원가입</h1>
                     <form method="POST" action="/joinProcess.php" id="signup-form">
                         <h2>🧑‍🤝‍🧑반려인 정보</h2>
                         <div class="user_nickname">
@@ -59,29 +60,11 @@
                             <label for="passwordCheck" class="form-label">비밀번호 체크</label>
                             <input type="password" class="form-control" id="password-check" placeholder="비밀번호를 입력해 주세요.">
                         </div>
-                        <br>
-                        <h2>🐶반려동물 정보</h2>
-                        <div class="pets_name">
-                            <label for="pets_name">반려동물 이름</label>
-                            <input type="text" name="pets_name" id="pets_name" autocomplete="off" required>
-                        </div>
-                        <div class="pets_age">
-                            <label for="pets_agee">반려동물 나이</label>
-                            <input type="text" name="pets_age" id="pets_age" autocomplete="off" required>
-                        </div>
-                        <div class="pets_sex">
-                            <label for="pets_sex">반려동물 성별</label>
-                            <input type='radio' name='pets_sex' id="pets_sex" value='F' checked/>Female
-                            <input type='radio' name='pets_sex' id="pets_sex" value='M'/>Male
-                        </div>
-                        <div class="pets_goal">
-                            <label for="pets_goal">반려동물 목표 음수량(단위: ml)</label>
-                            <input type="text" name="pets_goal" id="pets_goal" autocomplete="off" required>
-                        </div>
                         <div class="btn">
                             <button type="button" id="signup-button">회원가입</button>
                         </div>
                     </form>
+                    <!-- 비밀번호가 일치하지 않을 시 에러 메시지 출력 -->
                     <script>
                         const signupForm = document.querySelector("#signup-form");
                         const signupButton = document.querySelector("#signup-button");

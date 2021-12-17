@@ -219,7 +219,7 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 250px;
+  bottom: 120px;
   width: 260px;
 }
 
@@ -324,7 +324,7 @@ img {
     letter-spacing: 1.2rem;
   }
   .home__img {
-    width: 530px;
+    width: 350px;
   }
   .collection__container {
     grid-template-columns: repeat(2, 1fr);
@@ -372,7 +372,7 @@ img {
   }
 
   .home__img {
-    right: 15%;
+    right: 10%;
   }
   .new__container {
     grid-template-columns: repeat(3, 1fr);
